@@ -16,6 +16,7 @@
 		8F7E66C926090D690019B747 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E66C726090D690019B747 /* LaunchScreen.storyboard */; };
 		8F7E66D426090D6A0019B747 /* NeuroSkyFaceAndBrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E66D326090D6A0019B747 /* NeuroSkyFaceAndBrainTests.swift */; };
 		8F7E66DF26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E66DE26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests.swift */; };
+		8F7E66F726090F8A0019B747 /* libMWMSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7E66F426090F8A0019B747 /* libMWMSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,10 @@
 		8F7E66DA26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeuroSkyFaceAndBrainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7E66DE26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroSkyFaceAndBrainUITests.swift; sourceTree = "<group>"; };
 		8F7E66E026090D6A0019B747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F7E66F326090F8A0019B747 /* MWMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMDevice.h; sourceTree = "<group>"; };
+		8F7E66F426090F8A0019B747 /* libMWMSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMWMSDK.a; sourceTree = "<group>"; };
+		8F7E66F526090F8A0019B747 /* MWMDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMDelegate.h; sourceTree = "<group>"; };
+		8F7E66F626090F8A0019B747 /* MWMEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMEnum.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F7E66F726090F8A0019B747 /* libMWMSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +107,7 @@
 		8F7E66B826090D690019B747 /* NeuroSkyFaceAndBrain */ = {
 			isa = PBXGroup;
 			children = (
+				8F7E66F226090F210019B747 /* libn */,
 				8F7E66B926090D690019B747 /* AppDelegate.swift */,
 				8F7E66BB26090D690019B747 /* SceneDelegate.swift */,
 				8F7E66BD26090D690019B747 /* ViewController.swift */,
@@ -129,6 +136,17 @@
 				8F7E66E026090D6A0019B747 /* Info.plist */,
 			);
 			path = NeuroSkyFaceAndBrainUITests;
+			sourceTree = "<group>";
+		};
+		8F7E66F226090F210019B747 /* libn */ = {
+			isa = PBXGroup;
+			children = (
+				8F7E66F426090F8A0019B747 /* libMWMSDK.a */,
+				8F7E66F526090F8A0019B747 /* MWMDelegate.h */,
+				8F7E66F326090F8A0019B747 /* MWMDevice.h */,
+				8F7E66F626090F8A0019B747 /* MWMEnum.h */,
+			);
+			path = libn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,6 +465,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NeuroSkyFaceAndBrain/libn",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JoshuaKent.NeuroSkyFaceAndBrain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -465,6 +487,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NeuroSkyFaceAndBrain/libn",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JoshuaKent.NeuroSkyFaceAndBrain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
