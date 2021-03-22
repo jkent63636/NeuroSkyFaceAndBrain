@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F7E66BA26090D690019B747 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E66B926090D690019B747 /* AppDelegate.swift */; };
+		8F7E66BC26090D690019B747 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E66BB26090D690019B747 /* SceneDelegate.swift */; };
+		8F7E66BE26090D690019B747 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E66BD26090D690019B747 /* ViewController.swift */; };
+		8F7E66C126090D690019B747 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E66BF26090D690019B747 /* Main.storyboard */; };
+		8F7E66C426090D690019B747 /* NeuroSkyFaceAndBrain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E66C226090D690019B747 /* NeuroSkyFaceAndBrain.xcdatamodeld */; };
+		8F7E66C626090D690019B747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E66C526090D690019B747 /* Assets.xcassets */; };
+		8F7E66C926090D690019B747 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7E66C726090D690019B747 /* LaunchScreen.storyboard */; };
+		8F7E66D426090D6A0019B747 /* NeuroSkyFaceAndBrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E66D326090D6A0019B747 /* NeuroSkyFaceAndBrainTests.swift */; };
+		8F7E66DF26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7E66DE26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F7E66D026090D6A0019B747 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F7E66AE26090D690019B747 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F7E66B526090D690019B747;
+			remoteInfo = NeuroSkyFaceAndBrain;
+		};
+		8F7E66DB26090D6A0019B747 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F7E66AE26090D690019B747 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F7E66B526090D690019B747;
+			remoteInfo = NeuroSkyFaceAndBrain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F7E66B626090D690019B747 /* NeuroSkyFaceAndBrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeuroSkyFaceAndBrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F7E66B926090D690019B747 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F7E66BB26090D690019B747 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8F7E66BD26090D690019B747 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F7E66C026090D690019B747 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F7E66C326090D690019B747 /* NeuroSkyFaceAndBrain.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NeuroSkyFaceAndBrain.xcdatamodel; sourceTree = "<group>"; };
+		8F7E66C526090D690019B747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F7E66C826090D690019B747 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F7E66CA26090D690019B747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F7E66CF26090D6A0019B747 /* NeuroSkyFaceAndBrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeuroSkyFaceAndBrainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F7E66D326090D6A0019B747 /* NeuroSkyFaceAndBrainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroSkyFaceAndBrainTests.swift; sourceTree = "<group>"; };
+		8F7E66D526090D6A0019B747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F7E66DA26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeuroSkyFaceAndBrainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F7E66DE26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroSkyFaceAndBrainUITests.swift; sourceTree = "<group>"; };
+		8F7E66E026090D6A0019B747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F7E66B326090D690019B747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7E66CC26090D6A0019B747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7E66D726090D6A0019B747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F7E66AD26090D690019B747 = {
+			isa = PBXGroup;
+			children = (
+				8F7E66B826090D690019B747 /* NeuroSkyFaceAndBrain */,
+				8F7E66D226090D6A0019B747 /* NeuroSkyFaceAndBrainTests */,
+				8F7E66DD26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests */,
+				8F7E66B726090D690019B747 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F7E66B726090D690019B747 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F7E66B626090D690019B747 /* NeuroSkyFaceAndBrain.app */,
+				8F7E66CF26090D6A0019B747 /* NeuroSkyFaceAndBrainTests.xctest */,
+				8F7E66DA26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F7E66B826090D690019B747 /* NeuroSkyFaceAndBrain */ = {
+			isa = PBXGroup;
+			children = (
+				8F7E66B926090D690019B747 /* AppDelegate.swift */,
+				8F7E66BB26090D690019B747 /* SceneDelegate.swift */,
+				8F7E66BD26090D690019B747 /* ViewController.swift */,
+				8F7E66BF26090D690019B747 /* Main.storyboard */,
+				8F7E66C526090D690019B747 /* Assets.xcassets */,
+				8F7E66C726090D690019B747 /* LaunchScreen.storyboard */,
+				8F7E66CA26090D690019B747 /* Info.plist */,
+				8F7E66C226090D690019B747 /* NeuroSkyFaceAndBrain.xcdatamodeld */,
+			);
+			path = NeuroSkyFaceAndBrain;
+			sourceTree = "<group>";
+		};
+		8F7E66D226090D6A0019B747 /* NeuroSkyFaceAndBrainTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F7E66D326090D6A0019B747 /* NeuroSkyFaceAndBrainTests.swift */,
+				8F7E66D526090D6A0019B747 /* Info.plist */,
+			);
+			path = NeuroSkyFaceAndBrainTests;
+			sourceTree = "<group>";
+		};
+		8F7E66DD26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8F7E66DE26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests.swift */,
+				8F7E66E026090D6A0019B747 /* Info.plist */,
+			);
+			path = NeuroSkyFaceAndBrainUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F7E66B526090D690019B747 /* NeuroSkyFaceAndBrain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F7E66E326090D6A0019B747 /* Build configuration list for PBXNativeTarget "NeuroSkyFaceAndBrain" */;
+			buildPhases = (
+				8F7E66B226090D690019B747 /* Sources */,
+				8F7E66B326090D690019B747 /* Frameworks */,
+				8F7E66B426090D690019B747 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeuroSkyFaceAndBrain;
+			productName = NeuroSkyFaceAndBrain;
+			productReference = 8F7E66B626090D690019B747 /* NeuroSkyFaceAndBrain.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F7E66CE26090D6A0019B747 /* NeuroSkyFaceAndBrainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F7E66E626090D6A0019B747 /* Build configuration list for PBXNativeTarget "NeuroSkyFaceAndBrainTests" */;
+			buildPhases = (
+				8F7E66CB26090D6A0019B747 /* Sources */,
+				8F7E66CC26090D6A0019B747 /* Frameworks */,
+				8F7E66CD26090D6A0019B747 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F7E66D126090D6A0019B747 /* PBXTargetDependency */,
+			);
+			name = NeuroSkyFaceAndBrainTests;
+			productName = NeuroSkyFaceAndBrainTests;
+			productReference = 8F7E66CF26090D6A0019B747 /* NeuroSkyFaceAndBrainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8F7E66D926090D6A0019B747 /* NeuroSkyFaceAndBrainUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F7E66E926090D6A0019B747 /* Build configuration list for PBXNativeTarget "NeuroSkyFaceAndBrainUITests" */;
+			buildPhases = (
+				8F7E66D626090D6A0019B747 /* Sources */,
+				8F7E66D726090D6A0019B747 /* Frameworks */,
+				8F7E66D826090D6A0019B747 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F7E66DC26090D6A0019B747 /* PBXTargetDependency */,
+			);
+			name = NeuroSkyFaceAndBrainUITests;
+			productName = NeuroSkyFaceAndBrainUITests;
+			productReference = 8F7E66DA26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F7E66AE26090D690019B747 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					8F7E66B526090D690019B747 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					8F7E66CE26090D6A0019B747 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 8F7E66B526090D690019B747;
+					};
+					8F7E66D926090D6A0019B747 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 8F7E66B526090D690019B747;
+					};
+				};
+			};
+			buildConfigurationList = 8F7E66B126090D690019B747 /* Build configuration list for PBXProject "NeuroSkyFaceAndBrain" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F7E66AD26090D690019B747;
+			productRefGroup = 8F7E66B726090D690019B747 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F7E66B526090D690019B747 /* NeuroSkyFaceAndBrain */,
+				8F7E66CE26090D6A0019B747 /* NeuroSkyFaceAndBrainTests */,
+				8F7E66D926090D6A0019B747 /* NeuroSkyFaceAndBrainUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F7E66B426090D690019B747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7E66C926090D690019B747 /* LaunchScreen.storyboard in Resources */,
+				8F7E66C626090D690019B747 /* Assets.xcassets in Resources */,
+				8F7E66C126090D690019B747 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7E66CD26090D6A0019B747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7E66D826090D6A0019B747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F7E66B226090D690019B747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7E66BE26090D690019B747 /* ViewController.swift in Sources */,
+				8F7E66C426090D690019B747 /* NeuroSkyFaceAndBrain.xcdatamodeld in Sources */,
+				8F7E66BA26090D690019B747 /* AppDelegate.swift in Sources */,
+				8F7E66BC26090D690019B747 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7E66CB26090D6A0019B747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7E66D426090D6A0019B747 /* NeuroSkyFaceAndBrainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7E66D626090D6A0019B747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7E66DF26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F7E66D126090D6A0019B747 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F7E66B526090D690019B747 /* NeuroSkyFaceAndBrain */;
+			targetProxy = 8F7E66D026090D6A0019B747 /* PBXContainerItemProxy */;
+		};
+		8F7E66DC26090D6A0019B747 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F7E66B526090D690019B747 /* NeuroSkyFaceAndBrain */;
+			targetProxy = 8F7E66DB26090D6A0019B747 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F7E66BF26090D690019B747 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F7E66C026090D690019B747 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8F7E66C726090D690019B747 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F7E66C826090D690019B747 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F7E66E126090D6A0019B747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F7E66E226090D6A0019B747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F7E66E426090D6A0019B747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVHEACF5SY;
+				INFOPLIST_FILE = NeuroSkyFaceAndBrain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoshuaKent.NeuroSkyFaceAndBrain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F7E66E526090D6A0019B747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVHEACF5SY;
+				INFOPLIST_FILE = NeuroSkyFaceAndBrain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoshuaKent.NeuroSkyFaceAndBrain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8F7E66E726090D6A0019B747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVHEACF5SY;
+				INFOPLIST_FILE = NeuroSkyFaceAndBrainTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoshuaKent.NeuroSkyFaceAndBrainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeuroSkyFaceAndBrain.app/NeuroSkyFaceAndBrain";
+			};
+			name = Debug;
+		};
+		8F7E66E826090D6A0019B747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVHEACF5SY;
+				INFOPLIST_FILE = NeuroSkyFaceAndBrainTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoshuaKent.NeuroSkyFaceAndBrainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeuroSkyFaceAndBrain.app/NeuroSkyFaceAndBrain";
+			};
+			name = Release;
+		};
+		8F7E66EA26090D6A0019B747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVHEACF5SY;
+				INFOPLIST_FILE = NeuroSkyFaceAndBrainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoshuaKent.NeuroSkyFaceAndBrainUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NeuroSkyFaceAndBrain;
+			};
+			name = Debug;
+		};
+		8F7E66EB26090D6A0019B747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVHEACF5SY;
+				INFOPLIST_FILE = NeuroSkyFaceAndBrainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoshuaKent.NeuroSkyFaceAndBrainUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NeuroSkyFaceAndBrain;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F7E66B126090D690019B747 /* Build configuration list for PBXProject "NeuroSkyFaceAndBrain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F7E66E126090D6A0019B747 /* Debug */,
+				8F7E66E226090D6A0019B747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F7E66E326090D6A0019B747 /* Build configuration list for PBXNativeTarget "NeuroSkyFaceAndBrain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F7E66E426090D6A0019B747 /* Debug */,
+				8F7E66E526090D6A0019B747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F7E66E626090D6A0019B747 /* Build configuration list for PBXNativeTarget "NeuroSkyFaceAndBrainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F7E66E726090D6A0019B747 /* Debug */,
+				8F7E66E826090D6A0019B747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F7E66E926090D6A0019B747 /* Build configuration list for PBXNativeTarget "NeuroSkyFaceAndBrainUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F7E66EA26090D6A0019B747 /* Debug */,
+				8F7E66EB26090D6A0019B747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8F7E66C226090D690019B747 /* NeuroSkyFaceAndBrain.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8F7E66C326090D690019B747 /* NeuroSkyFaceAndBrain.xcdatamodel */,
+			);
+			currentVersion = 8F7E66C326090D690019B747 /* NeuroSkyFaceAndBrain.xcdatamodel */;
+			path = NeuroSkyFaceAndBrain.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8F7E66AE26090D690019B747 /* Project object */;
+}
