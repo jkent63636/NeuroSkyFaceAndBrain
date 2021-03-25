@@ -16,21 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcF-la-SLX">
-                                <rect key="frame" x="186" y="438" width="33" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvE-Qv-3gC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cvE-Qv-3gC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Iy-mU-lLp"/>
+                            <constraint firstItem="cvE-Qv-3gC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NFo-9n-xx3"/>
+                            <constraint firstItem="cvE-Qv-3gC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="R5y-AW-cFs"/>
+                            <constraint firstItem="cvE-Qv-3gC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="foM-zP-oED"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="sceneView" destination="cvE-Qv-3gC" id="eGx-HY-cmT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-197" y="46"/>
+            <point key="canvasLocation" x="-197.10144927536234" y="45.535714285714285"/>
         </scene>
     </scenes>
     <resources>
