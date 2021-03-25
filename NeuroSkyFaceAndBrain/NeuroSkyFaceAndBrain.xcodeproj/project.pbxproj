@@ -56,6 +56,7 @@
 		8F7E66F426090F8A0019B747 /* libMWMSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMWMSDK.a; sourceTree = "<group>"; };
 		8F7E66F526090F8A0019B747 /* MWMDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMDelegate.h; sourceTree = "<group>"; };
 		8F7E66F626090F8A0019B747 /* MWMEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMEnum.h; sourceTree = "<group>"; };
+		8F7E671526092F170019B747 /* NeuroSkyFaceAndBrain-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NeuroSkyFaceAndBrain-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,7 @@
 		8F7E66AD26090D690019B747 = {
 			isa = PBXGroup;
 			children = (
+				8F7E671526092F170019B747 /* NeuroSkyFaceAndBrain-Bridging-Header.h */,
 				8F7E66B826090D690019B747 /* NeuroSkyFaceAndBrain */,
 				8F7E66D226090D6A0019B747 /* NeuroSkyFaceAndBrainTests */,
 				8F7E66DD26090D6A0019B747 /* NeuroSkyFaceAndBrainUITests */,
@@ -394,6 +396,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "NeuroSkyFaceAndBrain-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -448,6 +451,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "NeuroSkyFaceAndBrain-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -471,6 +475,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JoshuaKent.NeuroSkyFaceAndBrain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NeuroSkyFaceAndBrain-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -494,6 +499,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JoshuaKent.NeuroSkyFaceAndBrain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NeuroSkyFaceAndBrain-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
