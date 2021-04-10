@@ -13,6 +13,25 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet weak var sceneView: ARSCNView!
     
+    //labels for face coeffecients
+    @IBOutlet weak var eyeBlinkLeft: UILabel!
+    @IBOutlet weak var eyeBlinkRight: UILabel!
+    @IBOutlet weak var mouthLeft: UILabel!
+    @IBOutlet weak var mouthRight: UILabel!
+    @IBOutlet weak var mouthSmileLeft: UILabel!
+    @IBOutlet weak var mouthSmileRight: UILabel!
+    @IBOutlet weak var browOuterUpLeft: UILabel!
+    @IBOutlet weak var browOuterUpRight: UILabel!
+    
+    var eyeBlinkLeftValue = 0.0
+    var eyeBlinkRightValue = 0.0
+    var mouthLeftValue = 0.0
+    var mouthRightValue = 0.0
+    var mouthSmileLeftValue = 0.0
+    var mouthSmileRightValue = 0.0
+    var browOuterUpLeftValue = 0.0
+    var browOuterUpRightValue = 0.0
+    
     //face geometry
     var faceGeo: ARSCNFaceGeometry?
     
@@ -74,6 +93,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             DispatchQueue.main.async {
                 //Put any object you want to update based on tracking here
                 
+                self.eyeBlinkLeft.text = "Eye Blink Left: \(self.eyeBlinkLeftValue)"
+                self.eyeBlinkRight.text = "Eye Blink Right: \(self.eyeBlinkRightValue)"
+                
+                self.mouthLeft.text = "Mouth Left: \(self.mouthLeftValue)"
+                self.mouthRight.text = "Mouth Right: \(self.mouthRightValue)"
+                
+                self.mouthSmileLeft.text = "Mouth Smile Left: \(self.mouthSmileLeftValue)"
+                self.mouthSmileRight.text = "Mouth Smile Right: \(self.mouthSmileRightValue)"
+                
+                self.browOuterUpLeft.text = "BrowOuter Up Left: \(self.browOuterUpLeftValue)"
+                self.browOuterUpRight.text = "BrowOuter Up Right: \(self.browOuterUpRightValue)"
             }
         }
     }
@@ -94,10 +124,58 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     
     func expression(anchor: ARFaceAnchor) {
-        let tongue = anchor.blendShapes[.tongueOut]
+        //Both eye linking
+        let eyeBlinkLeft = anchor.blendShapes[.eyeBlinkLeft]
+        let eyeBlinkRight = anchor.blendShapes[.eyeBlinkRight]
         
-        if tongue?.decimalValue ?? 0.0 > 0.1 {
-            print("Tongue Out!")
+        //Both lips of mouth treacking
+        let mouthLeft = anchor.blendShapes[.mouthLeft]
+        let mouthRight = anchor.blendShapes[.mouthRight]
+        
+        //Both side of mouth smiling tracking
+        let mouthSmileLeft = anchor.blendShapes[.mouthSmileLeft]
+        let mouthSmileRight = anchor.blendShapes[.mouthSmileRight]
+        
+        //Both outer brow tracking
+        let browOuterUpLeft = anchor.blendShapes[.browOuterUpLeft]
+        let browOuterUpRight = anchor.blendShapes[.browOuterUpRight]
+        
+        //a ?? b > c.a = coefficient from 0 (neutral) to 1 (max movement), b = default value, and c min to identify movement
+        
+        if eyeBlinkLeft?.decimalValue ?? 0.0 > 0.25 {
+            print("Left eye blink")
+            self.eyeBlinkLeftValue = (((eyeBlinkLeft?.doubleValue ?? 0.0)*100).rounded())/100
+        }
+        if eyeBlinkRight?.decimalValue ?? 0.0 > 0.25 {
+            print("Right eye blink")
+            self.eyeBlinkRightValue = (((eyeBlinkRight?.doubleValue ?? 0.0)*100).rounded())/100
+        }
+        
+        if mouthLeft?.decimalValue ?? 0.0 > 0.25 {
+            print("Mouth left")
+            self.mouthLeftValue = (((mouthLeft?.doubleValue ?? 0.0)*100).rounded())/100
+        }
+        if mouthRight?.decimalValue ?? 0.0 > 0.25 {
+            print("Mouth right")
+            self.mouthRightValue = (((mouthRight?.doubleValue ?? 0.0)*100).rounded())/100
+        }
+        
+        if mouthSmileLeft?.decimalValue ?? 0.0 > 0.25 {
+            print("Mouth Smile left")
+            self.mouthSmileLeftValue = (((mouthSmileLeft?.doubleValue ?? 0.0)*100).rounded())/100
+        }
+        if mouthSmileRight?.decimalValue ?? 0.0 > 0.25 {
+            print("Mouth Smile right")
+            self.mouthSmileRightValue = (((mouthSmileRight?.doubleValue ?? 0.0)*100).rounded())/100
+        }
+        
+        if browOuterUpLeft?.decimalValue ?? 0.0 > 0.25 {
+            print("Brow Outer left")
+            self.browOuterUpLeftValue = (((browOuterUpLeft?.doubleValue ?? 0.0)*100).rounded())/100
+        }
+        if browOuterUpRight?.decimalValue ?? 0.0 > 0.25 {
+            print("Brow Outer right")
+            self.browOuterUpRightValue = (((browOuterUpLeft?.doubleValue ?? 0.0)*100).rounded())/100
         }
     }
 

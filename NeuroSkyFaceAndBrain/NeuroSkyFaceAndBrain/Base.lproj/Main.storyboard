@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,20 +15,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvE-Qv-3gC">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </arscnView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="z09-UN-O7P">
+                                <rect key="frame" x="20" y="54" width="374" height="262"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="5Xn-be-63E">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="262"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eye Blink Left:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OId-Iz-J1X">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eye Blink Right:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mq-eJ-uyN">
+                                                <rect key="frame" x="0.0" y="35" width="240" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mouth Left:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-st-hks">
+                                                <rect key="frame" x="0.0" y="70" width="240" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mouth Right:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqa-IK-WSy">
+                                                <rect key="frame" x="0.0" y="105" width="240" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mouth Smile Left:   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1S-Oj-Sct">
+                                                <rect key="frame" x="0.0" y="140" width="240" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mouth Smile Right:   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28V-UP-7Gt">
+                                                <rect key="frame" x="0.0" y="175" width="240" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BrowOuter Up Left:   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l82-Zj-bGg">
+                                                <rect key="frame" x="0.0" y="210" width="240" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BrowOuter Up Right:   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pv3-18-ReP">
+                                                <rect key="frame" x="0.0" y="245" width="240" height="17"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="enQ-UE-G5K"/>
+                                            <constraint firstAttribute="height" constant="262" id="zYG-t1-TEx"/>
+                                        </constraints>
+                                    </stackView>
+                                    <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvE-Qv-3gC">
+                                        <rect key="frame" x="276" y="0.0" width="98" height="237"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="98" id="4HN-2l-J0p"/>
+                                            <constraint firstAttribute="height" constant="237" id="Qq5-ZE-kTO"/>
+                                        </constraints>
+                                    </arscnView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cvE-Qv-3gC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Iy-mU-lLp"/>
-                            <constraint firstItem="cvE-Qv-3gC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NFo-9n-xx3"/>
-                            <constraint firstItem="cvE-Qv-3gC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="R5y-AW-cFs"/>
-                            <constraint firstItem="cvE-Qv-3gC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="foM-zP-oED"/>
+                            <constraint firstItem="z09-UN-O7P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DiE-Np-S54"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z09-UN-O7P" secondAttribute="trailing" constant="20" id="XZ4-8c-GDv"/>
+                            <constraint firstItem="z09-UN-O7P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="vkl-Ov-QE2"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="browOuterUpLeft" destination="l82-Zj-bGg" id="X8j-v9-m2o"/>
+                        <outlet property="browOuterUpRight" destination="pv3-18-ReP" id="tTg-Gr-TvD"/>
+                        <outlet property="eyeBlinkLeft" destination="OId-Iz-J1X" id="9rT-RV-Co5"/>
+                        <outlet property="eyeBlinkRight" destination="8Mq-eJ-uyN" id="qyz-lu-i1A"/>
+                        <outlet property="mouthLeft" destination="Wbf-st-hks" id="Wci-HY-YG5"/>
+                        <outlet property="mouthRight" destination="vqa-IK-WSy" id="EAr-6k-LH4"/>
+                        <outlet property="mouthSmileLeft" destination="A1S-Oj-Sct" id="Rkw-OG-53e"/>
+                        <outlet property="mouthSmileRight" destination="28V-UP-7Gt" id="WXE-Em-ITh"/>
                         <outlet property="sceneView" destination="cvE-Qv-3gC" id="eGx-HY-cmT"/>
                     </connections>
                 </viewController>
@@ -38,9 +110,4 @@
             <point key="canvasLocation" x="-197.10144927536234" y="45.535714285714285"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
