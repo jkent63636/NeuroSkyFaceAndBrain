@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -84,6 +85,24 @@
                                     </arscnView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foq-cH-1ZV">
+                                <rect key="frame" x="116" y="433" width="182" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <state key="normal" title="Next Facial Weakness Test">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="facialWeaknessTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2A-MX-bdD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Smile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zY5-69-v1l">
+                                <rect key="frame" x="82" y="365" width="251" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,6 +117,7 @@
                         <outlet property="browOuterUpRight" destination="pv3-18-ReP" id="tTg-Gr-TvD"/>
                         <outlet property="eyeBlinkLeft" destination="OId-Iz-J1X" id="9rT-RV-Co5"/>
                         <outlet property="eyeBlinkRight" destination="8Mq-eJ-uyN" id="qyz-lu-i1A"/>
+                        <outlet property="facialWeaknessLabel" destination="zY5-69-v1l" id="DPq-jl-XFv"/>
                         <outlet property="mouthLeft" destination="Wbf-st-hks" id="Wci-HY-YG5"/>
                         <outlet property="mouthRight" destination="vqa-IK-WSy" id="EAr-6k-LH4"/>
                         <outlet property="mouthSmileLeft" destination="A1S-Oj-Sct" id="Rkw-OG-53e"/>
@@ -110,4 +130,12 @@
             <point key="canvasLocation" x="-197.10144927536234" y="45.535714285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
