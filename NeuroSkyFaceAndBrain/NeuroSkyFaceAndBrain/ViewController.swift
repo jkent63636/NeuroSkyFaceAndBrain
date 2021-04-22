@@ -23,6 +23,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var browOuterUpLeft: UILabel!
     @IBOutlet weak var browOuterUpRight: UILabel!
     
+    //label to show differenc in facial weakness
+    @IBOutlet weak var differenceFacialWeakness: UILabel!
+    
+    //Labels for NeuroSky brain waves
+    @IBOutlet weak var deltaWaves: UILabel!
+    @IBOutlet weak var thetaWaves: UILabel!
+    @IBOutlet weak var alphaWaves: UILabel!
+    
+    
     //Values should be inserted in the following order: mouthSmileLeft, mouthSmileRight, eyeBlinkLeft, eyeBlinkRight, mouthLeft, mouthRight, browOuterUpLeft, browOuterUpRight
     var facialValues = [0.0 , 0.0, 0.0 , 0.0, 0.0 , 0.0, 0.0 , 0.0]
     
@@ -30,7 +39,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var facialWeaknessLabel: UILabel!
     
     //list to hold facial weakness difference values. 10 is default
-    var facialDifferences = [["Smile", "Blink", "Pucker Lips", "Raise Eyebrows"], [10.0, 10.0, 10.0, 10.0]]
+    var facialDifferences = [["Smile", "Blink", "Move Lips", "Raise Eyebrows"], [10.0, 10.0, 10.0, 10.0]]
     
     //face geometry
     var faceGeo: ARSCNFaceGeometry?
@@ -104,6 +113,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 
                 self.browOuterUpLeft.text = "BrowOuter Up Left: \(self.facialValues[6])"
                 self.browOuterUpRight.text = "BrowOuter Up Right: \(self.facialValues[7])"
+                
+                //should be able to update brain wave labels here once that is implemented
             }
         }
     }
@@ -189,6 +200,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBAction func facialWeaknessTest(_ sender: UIButton) {
         facialDifferences[1][facialDifferenceIndex] = self.facialValues[facialValueIndex] - self.facialValues[facialValueIndex + 1]
         print(facialDifferences[1][facialDifferenceIndex])
+        
+        differenceFacialWeakness.text = "Difference: \(facialDifferences[1][facialDifferenceIndex])"
         
         facialDifferenceIndex += 1
         facialValueIndex += 2

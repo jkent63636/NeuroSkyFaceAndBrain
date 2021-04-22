@@ -103,6 +103,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brain Waves" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDf-C5-FX3">
+                                <rect key="frame" x="20" y="612" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delta:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6q-OZ-ZoY">
+                                <rect key="frame" x="20" y="641" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Theta:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVC-Le-lYc">
+                                <rect key="frame" x="20" y="670" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alpha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mE5-dE-RxF">
+                                <rect key="frame" x="20" y="699" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Difference:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUs-1o-VZA">
+                                <rect key="frame" x="116" y="495" width="217" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -113,8 +148,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="alphaWaves" destination="mE5-dE-RxF" id="Y5L-cP-nld"/>
                         <outlet property="browOuterUpLeft" destination="l82-Zj-bGg" id="X8j-v9-m2o"/>
                         <outlet property="browOuterUpRight" destination="pv3-18-ReP" id="tTg-Gr-TvD"/>
+                        <outlet property="deltaWaves" destination="O6q-OZ-ZoY" id="uFR-dI-sUM"/>
+                        <outlet property="differenceFacialWeakness" destination="eUs-1o-VZA" id="fvz-50-BfQ"/>
                         <outlet property="eyeBlinkLeft" destination="OId-Iz-J1X" id="9rT-RV-Co5"/>
                         <outlet property="eyeBlinkRight" destination="8Mq-eJ-uyN" id="qyz-lu-i1A"/>
                         <outlet property="facialWeaknessLabel" destination="zY5-69-v1l" id="DPq-jl-XFv"/>
@@ -123,6 +161,7 @@
                         <outlet property="mouthSmileLeft" destination="A1S-Oj-Sct" id="Rkw-OG-53e"/>
                         <outlet property="mouthSmileRight" destination="28V-UP-7Gt" id="WXE-Em-ITh"/>
                         <outlet property="sceneView" destination="cvE-Qv-3gC" id="eGx-HY-cmT"/>
+                        <outlet property="thetaWaves" destination="oVC-Le-lYc" id="qVc-yC-3Xa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
